@@ -14,11 +14,11 @@ def generate_combinations(char_set, min_length, max_length):
         size /= 1024
         unit_index += 1
 
-    print(f"Size of File: {round(size, 2)} {units[unit_index]}")
+    print(f"\033[91mSize of File: {round(size, 2)} {units[unit_index]}\033[91m")
 
-    confirm = input("Do you want to continue? (Yes-y/No-n): ").lower()
+    confirm = input("\033[92mDo you want to continue? (Yes-y/No-n):\033[92m ").lower()
 
-    if confirm == "e":
+    if confirm == "y":
         tamamlanma_saniye = combination_count / 1_600_000
         dakika, saniye = divmod(tamamlanma_saniye, 60)
         saat, dakika = divmod(dakika, 60)
@@ -27,25 +27,25 @@ def generate_combinations(char_set, min_length, max_length):
         ay, gun = divmod(gun, 30)
        
         if yil >= 1:
-            print(f"Remaining time of completion: {int(yil)} Year")
+            print(f"\033[93mRemaining time of completion: {int(yil)} Year\033[93m")
         elif ay >= 1:
-            print(f"Remaining time of completion: {int(ay)} Month")
+            print(f"\033[93mRemaining time of completion: {int(ay)} Month\033[93m")
         elif gun >= 1:
-            print(f"Remaining time of completion: {int(gun)} Day")
+            print(f"\033[93mRemaining time of completion: {int(gun)} Day\033[93m")
         elif saat >= 1:
-            print(f"Remaining time of completion: {int(saat)} Hour")
+            print(f"\033[93mRemaining time of completion: {int(saat)} Hour\033[93m")
         elif dakika >= 1:
-            print(f"Remaining time of completion: {int(dakika)} Minute")
+            print(f"\033[93mRemaining time of completion: {int(dakika)} Minute\033[93m")
         elif saniye >= 1:
-            print(f"Remaining time of completion: {int(saniye)} Second")
+            print(f"\033[93mRemaining time of completion: {int(saniye)} Second\033[93m")
 
         with open(f"{filename}.txt", "w") as f:
             for length in range(min_length, max_length + 1):
                 for combination in product(char_set, repeat=length):
                     f.write(''.join(combination) + '\n')
-        print(f"{filename} Completed Successfully!")
+        print(f"\033[96mCompleted Successfully!\033[96m")
     else:
-        print("Cancelled")
+        print("\033[91mCancelled\033[91m")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Creating Wordlist")
