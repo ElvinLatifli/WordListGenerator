@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 apt-get update
 apt-get install -y python3 git
 
@@ -68,3 +69,8 @@ while IFS= read -r line || [ -n "$line" ]; do
 done <<< "$ART"
 
 exit 0
+
+#------ AUTHOR ------#
+#   IG: @ltfl_elvin  #
+#   TG: @HackerRick  #
+#--------------------#
