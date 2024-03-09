@@ -14,8 +14,8 @@ To use it on your Linux system, follow the steps below:
 2. Navigate to the directory where you extracted the file in the console.
 3. Enter the WordListGenerator directory and run the config.sh file.
 4. If you encounter a permission error, use the following command:
-    ```bash
-    chmod +x config.sh
+```bash
+     chmod +x config.sh
     ```
 
 ## How to Use?
@@ -51,4 +51,6 @@ This command generates a wordlist with passwords ranging from 3 to 6 characters,
 ## Disclaimer
 
 This tool is intended for educational and ethical purposes only. Misuse of this tool for illegal activities is strictly prohibited. The author and contributors are not responsible for any misuse or damage caused by this tool.
+
+
 
