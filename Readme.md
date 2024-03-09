@@ -15,7 +15,7 @@ To use it on your Linux system, follow the steps below:
 3. Enter the WordListGenerator directory and run the config.sh file.
 4. If you encounter a permission error, use the following command:
     ```bash
-    chmod +x install.sh
+    chmod +x config.sh
     ```
 
 ## How to Use?
