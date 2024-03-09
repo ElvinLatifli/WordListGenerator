@@ -12,7 +12,7 @@ You can use this code as you wish. Don't get involved in illegal things :D
 To use it on your Linux system, follow the steps below:
 1. Download this project as zip and unzip it.
 2. Navigate to the directory where you extracted the file in the console.
-3. Enter the WordListGenerator directory and run the install.sh file.
+3. Enter the WordListGenerator directory and run the config.sh file.
 4. If you encounter a permission error, use the following command:
     ```bash
     chmod +x install.sh
