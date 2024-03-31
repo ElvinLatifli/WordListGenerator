@@ -4,7 +4,6 @@
 
 You can use this code as you wish. Don't get involved in illegal things :D
 
-- Instagram: [@ltfl_elvin](https://instagram.com/ltfl_elvin)
 - Telegram: [@HackerRick](https://t.me/HackerRick)
 
 ## Download Instructions
