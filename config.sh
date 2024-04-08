@@ -74,6 +74,5 @@ done <<< "$ART"
 exit 0
 
 #------ AUTHOR ------#
-#   IG: @ltfl_elvin  #
 #   TG: @HackerRick  #
 #--------------------#
